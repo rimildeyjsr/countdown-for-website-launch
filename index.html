@@ -37,7 +37,7 @@
         <span id="main-heading"></span>
     </div>
 
-    <button>
+    <button class="button-launch">
         Launch Website
     </button>
 
@@ -64,7 +64,8 @@
                 $(".main-heading").css("visibility","visible");
             },
             onStringTyped: function(){
-
+                $('.button-launch').addClass("animated slideInDown").css("visibility","visible")
+                ;
             }
         });
     });

@@ -102,7 +102,7 @@ h2 {
     color:white;
 }
 
-button {
+.button-launch {
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     -o-border-radius: 40px;
@@ -114,6 +114,8 @@ button {
     height: 50px;
     border: 1px solid white;
     display: block;
-    margin: 100px auto;
+    top: 70%;
+    margin: 150px auto;
     font-family: MyFont;
+    visibility: hidden;
 }
