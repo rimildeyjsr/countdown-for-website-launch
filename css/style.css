@@ -87,20 +87,15 @@ h2 {
     font-family: MyFont;
 }
 
-.heading {
-    visibility: hidden;
-    font-size: 2em;
-    text-align: center;
-    margin: 30px auto 10px auto;
-    color: white;
-}
 .main-heading {
     visibility: hidden;
-    font-size: 8em;
+    font-size: 10em;
     text-align: center;
-    margin: 0 auto;
+    margin: 10% auto;
     color:white;
+    height:50%;
 }
+
 
 .button-launch {
     -moz-border-radius: 40px;
@@ -116,6 +111,6 @@ h2 {
     display: block;
     top: 70%;
     margin: 150px auto;
-    font-family: MyFont;
+    font-family: 'MyFont2';
     visibility: hidden;
 }

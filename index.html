@@ -27,11 +27,12 @@
             src: url('font.ttf');
         }
 
-    </style>
+        @font-face {
+            font-family: MyFont2;
+            src: url('font2.ttf');
+        }
 
-    <div class="heading shadow-font">
-        <h2 id="heading">this website is</h2>
-    </div>
+    </style>
 
     <div class="main-heading my-font">
         <span id="main-heading"></span>
@@ -51,11 +52,9 @@
     $(document).ready(function(){
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-        $("#heading").addClass("animated slideInUp").css("visibility","visible");
-
         $("#main-heading").delay(2000).css("visibility","visible").typed({
-            strings:["^1000coming soon","έρχεται σύντομα","قريبا","快來了","tugh paw","もうすぐです",
-                "À venir","Tulossa ^1000pian","Prossimamente","শীঘ্রই আসছে","जल्द ^1000आ ^1000रहा है |"],
+            strings:["^1000Hello","नमस्ते","Bonjour","নমস্কার","Hola","ନମସ୍କାର","nuqneH","ನಮಸ್ಕಾರ","Ola","வணக்கம்","Hallo","سلام"
+                ,"Ciao","ਸਤ ਸ੍ਰੀ ਅਕਾਲ"],
             typeSpeed: 300,
             loop: true,
             showCursor: true,
