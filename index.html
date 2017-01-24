@@ -37,6 +37,8 @@
         Launch Website
     </button>
 
+    <div class="overlay"></div>
+
 </div>
 <script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
@@ -64,8 +66,9 @@
         });
 
         $('.button-launch').click(function(){
-
+            $('.overlay').addClass('open');
             window.setTimeout(function(){
+
                 window.location.href = "https://www.google.co.in";
             }, 5000);
 
