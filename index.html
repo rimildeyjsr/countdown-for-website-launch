@@ -13,11 +13,6 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="typed.js-master/main.css" rel="stylesheet">
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-    <!--Google Material Icons-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 </head>
 <body>
 <div class="block">
@@ -66,6 +61,14 @@
                 $('.button-launch').addClass("animated slideInDown").css("visibility","visible")
                 ;
             }
+        });
+
+        $('.button-launch').click(function(){
+
+            window.setTimeout(function(){
+                window.location.href = "https://www.google.co.in";
+            }, 5000);
+
         });
     });
 </script>
