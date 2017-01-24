@@ -116,7 +116,7 @@ h2 {
 }
 
 .overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -129,7 +129,7 @@ h2 {
 }
 .overlay:before {
     content: '';
-    background: #FF5252;
+    background: #000000;
     left: -55%;
     top: 0;
     width: 50%;
@@ -140,7 +140,7 @@ h2 {
 }
 .overlay:after {
     content: '';
-    background: #FF5252;
+    background: #000000;
     right: -55%;
     top: 0;
     width: 50%;
@@ -159,4 +159,14 @@ h2 {
 }
 .overlay.open:after {
     right: 0;
+}
+
+#content{
+    font-size:15em;
+    color:white;
+    text-align:center;
+    top:40%;
+    z-index: 100;
+    display: block;
+    position: relative;
 }
