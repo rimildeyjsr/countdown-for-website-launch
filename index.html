@@ -11,7 +11,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/jquery-ui.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
     <link href="typed.js-master/main.css" rel="stylesheet">
 </head>
 <body>
@@ -33,15 +33,10 @@
         <span id="main-heading"></span>
     </div>
 
-    <button class="button-launch">
-        Launch Website
-    </button>
-
-    <div class="overlay">
-        <div id="content">
-
-        </div>
+    <div class="button-launch">
+       Launch Website
     </div>
+
 
 </div>
 <script src="js/jquery-3.0.0.min.js"></script>
@@ -70,44 +65,10 @@
         });
 
         $('.button-launch').click(function(){
-            window.setTimeout(function(){
-            window.location.href = "https://rimildeyjsr.github.io/st.anthony";
-             }, 1000);
-            });
-
-            //window.setTimeout(function(){
-                //window.location.href = "https://rimildeyjsr.github.io/st.anthony";
-           // }, 5000);
-
+            window.location.href = 'main.html';
+        });
 
     });
-
-    var count = 10;
-
-    function updateTimer(){
-        if(count > 0){
-            $("#content").fadeOut('slow', function(){
-                $("#content").text(count);
-                $("#content").fadeIn();
-                count--;
-            });
-
-        }
-        else if(count == 0){
-            $("#content").fadeOut('slow', function(){
-                $("#content").text("Start");
-                $("#content").fadeIn();
-                count--;
-            });
-
-        }
-        else {
-            $("#content").fadeOut();
-            clearInterval(interval);
-        }
-
-    }
-
 
 </script>
 </body>
