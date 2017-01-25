@@ -10,9 +10,11 @@
     <!--Css Stylesheets-->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="typed.js-master/main.css" rel="stylesheet">
+    <link href="css/jquery.countdownTimer.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style1.css" rel="stylesheet">
-    <link href="typed.js-master/main.css" rel="stylesheet">
+
 </head>
 <body>
 <div class="block">
@@ -37,11 +39,16 @@
        Launch Website
     </div>
 
+    <div id="countdowntimer">
+        <span id="s_timer"></span>
+    </div>
+
 
 </div>
 <script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="typed.js-master/js/typed.js"></script>
+<script src="js/jquery.countdownTimer.min.js"></script>
 <script src="https://use.fontawesome.com/83638a08d2.js"></script>
 <script>
 
@@ -65,10 +72,22 @@
         });
 
         $('.button-launch').click(function(){
-            window.location.href = 'main.html';
+            $('.main-heading').hide();
+            $('.button-launch').hide();
+            time();
+            setTimeout(function(){
+                window.location.href = 'main.html';
+            },10000)
         });
 
     });
+
+    function time(){
+        $("#s_timer").countdowntimer({
+            seconds : 10,
+            size : "lg"
+        });
+    }
 
 </script>
 </body>
